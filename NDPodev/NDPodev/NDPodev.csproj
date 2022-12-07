@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A49D3D7-217F-44BD-83B3-A0111DF5B60A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NDPodev</RootNamespace>
+    <AssemblyName>NDPodev</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGelirGider.Designer.cs">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiderListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiderListele.Designer.cs">
+      <DependentUpon>FormGiderListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiderOluştur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiderOluştur.Designer.cs">
+      <DependentUpon>FormGiderOluştur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategori.Designer.cs">
+      <DependentUpon>FormKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarka.Designer.cs">
+      <DependentUpon>FormMarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMüşteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMüşteri.Designer.cs">
+      <DependentUpon>FormMüşteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMüşteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMüşteriListele.Designer.cs">
+      <DependentUpon>FormMüşteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatışListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatışListele.Designer.cs">
+      <DependentUpon>FormSatışListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSipariş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSipariş.Designer.cs">
+      <DependentUpon>FormSipariş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTedarikçiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTedarikçiEkle.Designer.cs">
+      <DependentUpon>FormTedarikçiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTedarikçiListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTedarikçiListele.Designer.cs">
+      <DependentUpon>FormTedarikçiListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormÜrünListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormÜrünListele.Designer.cs">
+      <DependentUpon>FormÜrünListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGelirGider.resx">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiderListele.resx">
+      <DependentUpon>FormGiderListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiderOluştur.resx">
+      <DependentUpon>FormGiderOluştur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategori.resx">
+      <DependentUpon>FormKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarka.resx">
+      <DependentUpon>FormMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMüşteri.resx">
+      <DependentUpon>FormMüşteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMüşteriListele.resx">
+      <DependentUpon>FormMüşteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatışListele.resx">
+      <DependentUpon>FormSatışListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSipariş.resx">
+      <DependentUpon>FormSipariş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTedarikçiEkle.resx">
+      <DependentUpon>FormTedarikçiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTedarikçiListele.resx">
+      <DependentUpon>FormTedarikçiListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormÜrünListele.resx">
+      <DependentUpon>FormÜrünListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
