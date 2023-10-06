@@ -1,2 +1,2 @@
 # C-Product-Application
-The program uses SQL database for requesting customer, product etc. data. It written with c# .net framework.
+The program uses SQL database for requesting customer, product etc. data. Written with c#.
